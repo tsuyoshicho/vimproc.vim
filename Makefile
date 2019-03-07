@@ -5,7 +5,11 @@ ifeq ($(OS),Windows_NT)
         PLATFORM = cygwin
     endif
     ifeq ($(findstring msys, $(SYS)),msys)
-        PLATFORM = cygwin
+        ifeq ($(findstring x86_64, $(SYS)),x86_64)
+            PLATFORM = cygwin64
+        else
+            PLATFORM = cygwin
+        endif
     endif
     ifeq ($(findstring mingw, $(SYS)),mingw)
         ifeq ($(findstring x86_64, $(SYS)),x86_64)
