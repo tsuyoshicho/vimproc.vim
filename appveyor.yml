@@ -4,7 +4,7 @@ shallow_clone: true
 environment:
   global:
     AUTH_TOKEN:
-      secure: rKd6JLXUIl3vcA8d0S9w14bl+uvUlZLt0d1M8bmlOh+owQqr5c40+/4ITCNBpHG3
+      secure: lvmCYHLJhYc+Thwtr0lC/K97WI54apWQTU3Eks+BXpbDrKGkYGYYWebpF44ji1Ue
     VIMVER: 80
   matrix:
   - COMPILER: msvc
@@ -39,7 +39,7 @@ deploy:
   provider: GitHub
   description: vimproc
   auth_token:
-    secure: rKd6JLXUIl3vcA8d0S9w14bl+uvUlZLt0d1M8bmlOh+owQqr5c40+/4ITCNBpHG3
+    secure: lvmCYHLJhYc+Thwtr0lC/K97WI54apWQTU3Eks+BXpbDrKGkYGYYWebpF44ji1Ue
   on:
     appveyor_repo_tag: true
     COMPILER: msvc
